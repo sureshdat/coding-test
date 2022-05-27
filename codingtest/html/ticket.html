@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <title>Ipl Ticket Booking</title>
+</head>
+
+<body>
+    <div class="container p-5 my-5" >
+        <h1 class="text-center"><u>IPL Ticket Booking</u></h1>
+    <br>    
+    <div class="container row">
+        <form id="iplForm" class="col-md-6">
+
+            <div>
+                <label for="spectator" class="form-lable">Spectator Name:</label>
+                <input id="name" type="text" class="form-control" required>
+            </div>
+            <div>
+                <label for="emailId" class="form-label">Email Id:</label>
+                <input id="email" type="email" class="form-control" required>
+            </div>
+            <div>
+                <label for="confirmEmail" class="form-label">Confirm Email Id:</label>
+                <input id="confirmEmail" type="email" class="form-control" required>
+            </div>
+            <div id="changes">
+                <div>
+                    <label for="stand" class="form-label">Select stand:</label>
+                    <select id="stand" class="form-select" required>
+                        <option selected>Select your stand</option>
+                        <option value="Platinum Gallery">Platinum Gallery</option>
+                        <option value="Super Hospitality Stand">Super Hospitality Stand</option>
+                        <option value="North West Stand">North West Stand</option>
+                        <option value="East Stand">East Stand</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label for="" class="form-label">Select Floor:</label>
+                    <select id="floor" class="form-select" required disabled>
+                        <option selected>Select your floor</option>
+                        <option value="First Floor">First Floor</option>
+                        <option value="Second Floor">Second Floor</option>
+                    </select>
+                </div>
+                <div>
+                </div>
+                <label for="" class="form-label">Cost Of Ticket:</label>
+                <input id="charges" type="number" class="form-control" value="" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-info my-3">Book Now</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+    <script src="../js/lib/bootstrap.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
